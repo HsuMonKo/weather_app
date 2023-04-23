@@ -13,6 +13,8 @@ jobs:
       run: echo ${{github.ref_name}}
   test_and_deploy:
     runs-on: ubuntu-latest
+    env:
+      OPENWEATHERMAP_KEY: ${{ secrets.openweathermap_key}}
     steps:
     # https://github.com/marketplace/actions/setup-java-jdk
     - name: Setup JDK 17
