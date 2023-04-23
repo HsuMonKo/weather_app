@@ -23,7 +23,7 @@ jobs:
     
     # https://github.com/marketplace/actions/setup-maven
     - name: Setup maven
-      uses: stCarolas/setup-maven@4.3
+      uses: stCarolas/setup-maven@v4.3
       with:
         maven-version: 3.8.2
     
